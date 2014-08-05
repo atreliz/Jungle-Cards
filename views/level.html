@@ -1,0 +1,31 @@
+
+<!--Main GAME screen-->
+  <section class="gameScreen page">
+        <!-- LOG BOARD-->
+        <article class="board" ng-show="sms">
+          <div class="border">
+             <!-- <h2 class="title">Jungle Card Game </h2> -->
+                  <span class="txtred half">LEVEL: {{level}} </span>
+                  <span class="txtred txtright half">TIMER: {{timermin}}:{{timersec}} </span>
+              <h2 class="instruccion full">{{sms}} </h2>
+             <ul class="info full">
+                <li class="tercio txtleft"> Cards: <b>{{totalcards}} </b>  </li>
+                <li class="tercio txtcenter"> Couples left: <b>{{ totalcouples-couples }} </b>  </li>
+                <li class="tercio txtright"> Tries: <b>{{levantes}} </b></li>
+              </ul>
+          </div>
+        </article>
+   
+        <!-- CARDS GROUP-->
+        <article id="grupocartas" class="full" ng-hide="newlevel"> 
+             <mpcartas ng-repeat="usuario in usuarios"> </mpcartas> 
+        </article>  
+
+        <!-- POPUP level DONe go to NEXT level -->
+        <article class="popup fcenter">
+              <h2 class="fcenter txtcenter leveldone {{transition}}"  ng-show="newlevel">
+                <span>Well done!</span> 
+              </h2>
+              <button class="fcenter txtcenter leveldone {{transition}}"  ng-show="newlevel" ng-click="restart(level)">Go for the Next Level</button> 
+        </article>     
+  </section>

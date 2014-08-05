@@ -1,0 +1,34 @@
+[
+ {
+  "id": "0",
+  "name": "Mario",
+  "surname": "Bros",
+  "job": "Plumber Master",
+  "city": "TBroke,NYC",
+  "img":"img/mario.png"
+},
+{
+  "id": "1",
+  "name": "Luigi",
+  "surname": "Bros",
+  "job": "Simple Plumber",
+  "city": "TBroke,NYC",
+    "img":"img/luigi.png"
+},
+{
+  "id": "2",
+  "name": "Koopa",
+  "surname": "Koopon",
+  "job": "Enemy",
+  "city": "Koopa City",
+  "img":"img/koopa.png"
+},
+{
+  "id": "3",
+  "name": "Bowser",
+  "surname": "Baby",
+  "job": "Enemy",
+  "city": "Bowser Palace",
+  "img":"img/bowser.png"
+}
+]

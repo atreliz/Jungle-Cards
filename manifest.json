@@ -1,0 +1,13 @@
+{
+  "name": "Mario Cards Game",
+  "description": "Angular Game Demo",
+  "launch_path": "/",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Alex Trebolle",
+    "url": "https://dl.dropbox.com/u/10210381/angular/app/cartas.html"
+  },
+  "default_locale": "en"
+}

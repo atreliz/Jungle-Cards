@@ -1,0 +1,27 @@
+<!--GAME FINISH SCREEN-->
+  <section class="endingPage page" >
+    <h3> Thanks for playing </h3>
+      <p> Here is your ranking</p>
+      <ul>
+        <li>Max level: {{level}} </li>
+        <li>Number of tries: {{ finaltotaltries}}</li>
+        <li>Number of couples done: {{ finaltotalcouples}}</li>
+
+      </ul>
+      
+      <button ng-click="restart(0)" > START GAME AGAIN</button>
+      <!--<button ng-click="ranking=!ranking" ng-init="ranking=false"> FINISH GAME </button>-->
+
+    
+     <small> Game made by Alex Trebolle </small>
+     <small> www.newebtaste.com </small>
+  </section>
+
+  <!--<secction class="internationalRanking page" ng-show="ranking==true">
+    <h4>Internacional ranking</h4>
+      <ul>
+        <li>3</li>
+        <li>4</li>
+      </ul>  
+     <button ng-click="ranking=false">International Ranking</button>
+  </secction>-->

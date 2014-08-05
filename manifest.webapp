@@ -1,0 +1,15 @@
+{
+  "name": "Junlge Cards",
+  "description": "Match the couples",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Alex Trebolle",
+    "url": "https://www.newebtaste.com"
+  },
+  "default_locale": "en",
+  "fullscreen": "true",
+  "orientation": "portrait"
+}

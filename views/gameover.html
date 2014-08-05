@@ -1,0 +1,21 @@
+
+<!--GAME OVER SCREEN-->
+   <secction class="ownRanking page" >
+    <h1>GAME OVER</h1>
+    <h4> <b class="nombre">{{lastuser}}</b> this is your score</h4>
+        <ul class="info">
+          <li> LEVEL: <b>{{lastlevel}} </b>  </li>
+            <li> Number of cards: <b>{{totalcards}} </b>  </li>
+            <li> Couples left: <b>{{ totalcouples-couples }} </b>  </li>
+            <li> Number of tries: <b>{{levantes}} </b></li>
+          </ul>
+
+    <!-- <h4> Let's check the ranking</h4>
+      <ul class="ranking">
+        <li ng-repeat="ranking in partidas">
+          {{$index + 1}} - {{ranking.user}} - Level:{{ranking.level}}.
+        </li>
+      </ul>-->
+      <button ng-click="restart(lastlevel-1)" > LET'S PLAY AGAIN</button>
+   
+  </secction>

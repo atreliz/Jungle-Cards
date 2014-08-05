@@ -1,0 +1,34 @@
+[
+ {
+  "id": "0",
+  "name": "Mario & Yoshi",
+  "surname": "",
+  "job": "Plumber & Dinosaur",
+  "city": "Stonw Era Town",
+  "img":"img/marioyoshi.png"
+},
+{
+  "id": "1",
+  "name": "Mario",
+  "surname": "Hammer",
+  "job": "Carpenter",
+  "city": "TBroke,NYC",
+    "img":"img/martillo.png"
+},
+{
+  "id": "2",
+  "name": "New Toad",
+  "surname": "",
+  "job": "Servant",
+  "city": "Toad Valley",
+  "img":"img/newtoad.png"
+},
+{
+  "id": "3",
+  "name": "Peach",
+  "surname": "Miss",
+  "job": "Princess",
+  "city": "Toad Valley",
+  "img":"img/peach.png"
+}
+]

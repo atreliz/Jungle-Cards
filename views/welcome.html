@@ -1,0 +1,28 @@
+<!-- Welcome Page,ready to start-->
+  <section class="welcomePage page">
+    <h3 class="txtcenter"> Welcome to </h3>
+    <h2 class="txtcenter"> Jungle Cards!! </h2>
+    <ul id="loginscreen">  
+      <li class="txtcenter explain ">
+        Flip the cards with a touch,<br> look for the couple, <br> and match them all to win
+      </li>
+
+      <li class="txtcenter" ng-hide="lastuser"> <input placeholder="Enter your name:" type="text" name="userName" ng-model="userName" required> </li>
+
+      <li class="txtcenter" ng-hide="lastuser"> 
+        <button class="fcenter" ng-click="loadLevel(0,userName)" ng-show="userName" > START NEW GAME </button> 
+      </li>
+
+     <li class="txtcenter" ng-show="lastuser"> 
+        Hi <b class="nombre">{{lastuser}} !! </b> just play a <button ng-click="loadLevel(0,lastuser)"> NEW GAME</button>
+      </li>
+
+      <li class="txtcenter" ng-show="lastuser">  
+        or  <button ng-click="loadLevel(lastlevel,lastuser)">  Continue </button> from last level
+      </li>
+      <button class="fright" ng-show="lastuser" ng-click="logOut()">  Logout </button> 
+
+      <!--<li> <button ng-click="ranking=!ranking" ng-init="ranking=false"> FINISH GAME </button> </li> -->            
+    </ul>
+
+  </section>

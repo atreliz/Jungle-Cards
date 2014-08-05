@@ -1,0 +1,41 @@
+CACHE MANIFEST
+//Jungle Card V1
+
+//MAIN FILES
+
+css/my.css
+
+js/controllers.js
+js/lib/jquery.min.js
+js/lib/angular.min.js
+
+json/animals-level1.json
+json/animals-level2.json
+json/animals-level3.json
+json/animals-level12.json
+
+index.html
+manifest.json
+manifest.webapp
+
+//MUSIC
+sound/game.mp3
+sound/deepforest.mp3
+
+//IMAGES
+img/icon-128.png
+img/jungle/bg-jungle.png
+img/jungle/animals/cebra.png
+img/jungle/animals/elefante.png
+img/jungle/animals/girafa.png
+img/jungle/animals/hipopotamo.png
+img/jungle/animals/hormiga.png
+img/jungle/animals/leon.png
+img/jungle/animals/loro.png
+img/jungle/animals/pez.png
+
+img/jungle/animals/puercoespin.png
+img/jungle/animals/rino.png
+img/jungle/animals/serpiente.png
+img/jungle/animals/tigre.png
+

@@ -1,0 +1,34 @@
+[
+ {
+  "id": "0",
+  "name": "Ant",
+  "surname": "Bros",
+  "job": "Plumber Master",
+  "city": "TBroke,NYC",
+  "img":"img/jungle/animals/hormiga.png"
+},
+{
+  "id": "1",
+  "name": "Lion",
+  "surname": "Bros",
+  "job": "Simple Plumber",
+  "city": "TBroke,NYC",
+    "img":"img/jungle/animals/leon.png"
+},
+{
+  "id": "2",
+  "name": "Snake",
+  "surname": "Koopon",
+  "job": "Enemy",
+  "city": "Koopa City",
+  "img":"img/jungle/animals/serpiente.png"
+},
+{
+  "id": "3",
+  "name": "Tiger",
+  "surname": "Baby",
+  "job": "Enemy",
+  "city": "Bowser Palace",
+  "img":"img/jungle/animals/tigre.png"
+}
+]

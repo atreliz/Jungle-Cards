@@ -1,0 +1,39 @@
+[
+  {
+  "label":"caja de EMAIL",
+  "type": "email",
+  "name": "emailto",
+  "value":"vmail",
+  "requiered": "true",
+  "min": "5",
+  "max": "10"
+  },
+  {
+  "label":"caja de texto",
+  "type": "text",
+  "name": "text",
+  "value":"vtext",
+  "requiered": "true",
+  "min": "2",
+  "max": "10"
+  },
+  {
+  "label":"caja de DNI",
+  "type": "text",
+  "name": "DNI",
+  "value":"vdni",
+  "requiered": "true",
+  "min": "2",
+  "max": "4"
+  },
+  {
+  "label":"caja de URL",
+  "type": "url",
+  "name": "url",
+  "value":"vurl",
+  "requiered": "true",
+  "min": "2",
+  "max": "4"
+  }
+
+]

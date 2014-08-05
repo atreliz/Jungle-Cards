@@ -1,0 +1,339 @@
+
+*{
+
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#container{display:block; width:100%; height:auto; }
+
+footer li{text-decoration: none; padding-right:30px;display:inline;}
+
+
+
+.ng-invalid { border: 1px red solid; }/*Error*/
+.ng-valid { background-color: #fff; border: 1px green solid;}/*Aceptado*/
+
+.ng-pristine  { /*background-color: blue; border:3px solid blue;*/} /*sin clickarse*/
+.ng-dirty   { /*background-color:pink; border:3px solid pink;*/} /*sin clikado*/
+.red{color:red; font-weight: bold;}
+
+.columna{display:block;float:left;width:50%;}
+.columna label, .columna input, .columna span{display:block;float:left;width:50%;height:25px;}
+
+
+.bloque-cartas,form{display: block;float:left;width: 100%;height: auto;}
+.carta{display:block;float:left;height:auto;width:150px; border-radius: 10px; border:solid black 1px;margin:10px;}
+
+
+.instruccion{color:black;text-align: center;}
+
+.carta{border:3px solid white; }
+.carta ul{padding-left: 15px;}
+.carta li{list-style: none;}
+.selected{border:3px solid blue; }
+.done{border:3px solid red; }
+
+/*Flip cards*/
+
+.carta{
+    position: relative;
+    height:260px;
+    width:150px;
+    left: 50px;
+    top: 50px;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition:-moz-transform  1s ;
+
+     transition: 1s;
+     transform-style: preserve-3d;
+}
+
+.front{display:block;float:left;height:260px;width:150px;
+    border-radius: 7px;
+    background-color: white;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg); 
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+}
+
+.back{display:block;float:left;height:260px;width:150px; 
+    background-color: red; 
+    border-radius: 7px;
+    /*
+    background:url("../img/cards/card-1.jpg") no-repeat ;
+     background:url("../img/cards/card-2.jpg") no-repeat ;
+      background:url("../img/cards/card-3.jpg") no-repeat ;
+      background-size: 100% 100%;
+      background-position: center center;*/
+      color:white;
+
+    text-align: center;font-size: 26px; 
+}
+.back p{margin-top: 20%;
+}
+
+.side{
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+
+    -webkit-box-shadow: 0 2px 5px #666;
+}
+
+.selected,.done{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg); 
+}
+
+
+.bt{
+  border: 1px solid black;
+display: block;
+width: auto;
+padding: 5px 10px;
+border-radius: 14px;
+background-color: red;
+color: black;
+}
+
+/*NEW CSSS*/
+body{
+    background-image: url("../img/jungle/bg-jungle.png") !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    float:left;
+}
+
+.page{
+    
+    /*background-image: url(../img/background1.jpg)!important;
+    background-image: url(../img/jungle/bg-jungle.png)!important;
+    background-position: center center;
+    float: left;
+    width: 96%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.welcomePage ul li{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 5% 15%;
+    width:70%;
+    margin:auto;
+    color:red;
+
+
+}
+.welcomePage {
+/*min-height: 480px !important;
+width: 100%;*/
+display: block;
+
+}
+.welcomePage small{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    color: red;
+
+    background: white;
+    border-radius: 3px;
+    padding: 2px;
+    border: 1px solid red;
+    text-align: center;
+}
+.loading{z-index: 100; background:black !important; background-image: none;}
+.loading small{color:white;}
+b.nombre{color:red; text-transform: capitalize;}
+
+.welcomePage ul{
+    display: block;
+    height: auto;
+    float: left;
+}
+.welcomePage ul li{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.welcomePage ul li.explain{text-align: center;}
+
+.welcomePage input{  border-radius: 3px;}
+
+.page button{
+    background-color: red;
+    border-radius: 5px;
+    border: 0px outset buttonface;
+    border: 2px outset but;
+    border: 2px white solid;
+    color: white;
+    padding: 1% 2%;
+}
+.welcomePage button:disabled{opacity: 0.5;}
+.welcomePage button.center{padding: 5% 8%; margin: auto 20%;}
+
+.welcomePage h3{margin: 5% 10%;margin-top: 20%;}
+.welcomePage h3, .welcomePage h2{
+        color: rgb(243, 18, 18);
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+/*text-shadow: 0px 0px 2px rgba(0,0,0,.75);*/
+}
+.welcomePage h2{ text-align:center; font-size: 2.5em; margin-bottom: 0px;}
+
+.page .board{
+    float: left;
+    width: 86%;
+    padding: 0% 5%;
+    border-radius: 5px;
+    border: 5px red solid;
+    height: auto;
+    background: white;
+}
+.page .board h2{
+    width: 100%;
+}
+.page .board h2.title{
+    font-size: 1.3em;
+     text-align: center;     
+    color: rgb(243, 18, 18);
+    text-shadow: 1px 1px 2px black;
+}
+.page .board h2.instruccion{
+    text-align: center;   
+    color: green;
+    text-shadow: 1px 1px 1px black;
+}
+.page .board h2.title{text-align: left;}
+.page .board span.red{ width: 49%; display: block; float:left;text-align: right;}
+.page .board span.red.left{ text-align: left;}
+
+#grupocartas{
+    float:left;
+    width: 100%;
+
+
+}
+.ownRanking{
+    padding: 40% 20%;
+    width: 60%;
+    height: auto;
+    min-height: 60%;
+}
+.ownRanking h4{text-align: center; width: 100%;}
+.ownRanking h1{
+    color:red;
+    margin-bottom: 15%;
+    width: 100%;
+    text-align: center;
+}
+.ownRanking ul.info li{
+    float:left;
+    text-align: center;
+    width: 100%;
+    padding: 4% 0%;
+}
+.ownRanking ul.info{ margin-bottom: 15%; width: 100%;}
+.ownRanking button{display:block;margin:auto;}
+ul.ranking li{
+    color:red; 
+    text-transform: uppercase;
+    list-style: none;
+    margin: 2% 0%;
+}
+
+div.bloque-cartas h2.leveldone{
+    float: left;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(243, 18, 18);
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+    margin: 20% auto 10% auto;
+}
+
+
+
+div.bloque-cartas button.leveldone{
+    margin: auto;
+    display: block;
+}
+div.bloque-cartas .leveldone{
+    opacity: 0;
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s; /* Safari */
+
+}
+
+div.bloque-cartas button.leveldone.true,div.bloque-cartas h2.leveldone.true{
+        opacity: 1;
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 768px) {
+
+    body{ font-size: 0.7em; margin: 0px;}
+    #container {display: block;  width: 100%;}
+
+    div.bloque-cartas h2{font-size: 1.1em; }
+    ul.info li{float: left; list-style-type: none;}
+     /*ul.info li:nth-child(2){padding-left: 2%;padding-right: 2%;}
+    ul.info{float: left;width: 100%;margin: 1% 2%;padding: 0px; list-style-type: none;}*/
+    div.carta{
+        position: relative;
+        height: 15%;
+        width: 19%;
+        left: 0%;
+        top: 0%;
+        margin: 2%;
+       /*-webkit-transform:translate3d(0,0,0);/*
+    }
+
+    div.carta .front.side, div.carta .back.side {    height: 100%;    width: 100%;}
+    div.carta .front.side{background-color: white;}
+    div.carta .front.side img {height: 83%; width: 100%;border-radius: 7px;}
+    div.carta .front.side ul li{display:none; }
+    div.carta .front.side ul li:nth-child(1){display:block; }
+    div.carta .back.side {font-size: 1.2em;}
+    div.carta ul{padding-left: 0px;margin: 0px;text-align: center;}
+
+    h2.instruccion .bt {
+            border: 3px solid black;
+            display: block;
+            width: 50%;
+            padding: 3%;
+            border-radius: 14px;
+            background-color: red;
+            color: black;
+            float: left;
+            margin: 0px 20%;
+            margin-top: 40%;
+            font-size: 1.2em;
+    }
+
+
+
+}
+@media only screen and (min-width : 769px) {
+        .welcomePage h3 {   margin-top: 5%;}
+        div.carta { height: 20%;}
+
+}

@@ -1,0 +1,33 @@
+<!-- html ng-app="myApp" manifest="saving.appcache" type="text/cache-manifest"-->
+<html>
+
+  <head>
+        <meta charset="utf-8">
+        <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+       
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-startup-image" href="img/jungle/bg-jungle.png" />
+        <link rel="apple-touch-icon" href="img/icon-128.png"/>
+        
+        <title>Jungle Cards</title>
+        <link rel="stylesheet" href="css/my.css">
+        <link rel="stylesheet" href="css/general.css">
+
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+
+  </head>
+
+  <body ng-app="myApp" >
+        <div id="container" ng-controller="mainCtrl">
+            <div ng-view></div>
+        </div><!-- del container-->
+
+  </body>
+
+        
+
+</html>

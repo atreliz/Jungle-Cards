@@ -1,0 +1,34 @@
+[
+ {
+  "id": "0",
+  "name": "Bowser & Peach",
+  "surname": "No family",
+  "job": "Lovers",
+  "city": "Palaca",
+  "img":"img/bowserandpeach.png"
+},
+{
+  "id": "1",
+  "name": "Mario",
+  "surname": "Castor",
+  "job": "Castor Plumber",
+  "city": "castor City",
+    "img":"img/castor.png"
+},
+{
+  "id": "2",
+  "name": "Mario",
+  "surname": "Group",
+  "job": "Gamers",
+  "city": "Mario's Game",
+  "img":"img/group.png"
+},
+{
+  "id": "3",
+  "name": "toad",
+  "surname": "old style",
+  "job": "Servant",
+  "city": "Peach Palace",
+  "img":"img/toad.png"
+}
+]

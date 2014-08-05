@@ -1,0 +1,139 @@
+/*RESET*/
+* {
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    font-family: arial;
+}
+
+/*TXT estructure*/
+.txtcenter{text-align: center;}
+.txtleft{text-align: left;}
+.txtright{text-align: right;}
+.txtgreen,.explain{color:green !important;}
+.txtred{color:red;}
+
+
+/* Scafoldin main strcuture*/
+.fleft{ display:block; float:left;}
+.fright{ display:block; float:right;}
+.fcenter{ display:block; margin:auto;}
+
+.full{width:98% !important; margin:0.5% 1% !important; float:left !important;}
+.half{width:48%; margin:0.5% 1%; float:left;}
+.tercio{width:31%; margin:0.5% 1%; float:left;}
+
+#container,.page{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+}
+
+
+
+.page button {
+background-color: red;
+border-radius: 5px;
+border: 0px outset buttonface;
+border: 2px outset but;
+border: 2px white solid;
+color: white;
+padding: 2% 4%;
+font-size: 1.1em;
+}
+
+input{
+    font-size: 1.1em;
+    text-align: center;
+}
+/* -------PAGES ----- */
+    #loginscreen{
+        margin: 2% 10%;
+        background: rgba(255,255,255,.8);
+        border: 5px solid red;
+        border-radius: 5px;
+    }
+    #loginscreen li{
+        color:red; 
+        text-shadow: 0px 0px 0px black;
+        padding: 5% 5%;
+        width: 90%;
+    }
+
+/* LEVEL-PAGE*/
+    .page .board {
+        float:left;
+        /*height: auto;*/
+        height: 13%;
+        width:94%;
+        margin: 0% 2%;
+        padding:1%;
+        border-width:0px;
+        /*box-shadow: inset 0px 0px 15px red;*/
+    }
+    .page .board .border{
+        margin: -3px -5px;
+        border: solid 5px red;
+        border-radius: 5px;
+        display: block;
+        height: auto;
+        width: auto;
+        float: left;
+    }
+    .page .board span{font-size: .8em;}
+    .page .board h2{font-size: .9em;} 
+    .page .board h2.title {font-size: 1em;} 
+    .page .board li{font-size: .8em;}  
+
+    #grupocartas{
+        height: 87%;
+    }
+
+    #grupocartas .carta{
+        float:left;
+        display: block;
+        width:21%;
+        height:21%;
+        margin: 2%;
+        border:0px !important; /*REMOVE LATER*/
+    }
+
+    #grupocartas .carta .front,#grupocartas .carta .back{
+        float:left;
+        display: block;
+        width:100%;
+        height:100%;
+    }
+     #grupocartas .carta, #grupocartas .carta .side{
+        border-radius: 7px;
+     }
+     #grupocartas .carta .side{
+        border: 3px solid white;
+        margin: -3px;
+        border-radius: 7px;
+     }
+    #grupocartas .carta.done .side{   border: 3px solid red;  }
+    #grupocartas .carta.selected .side{border: 3px solid blue;}
+     #grupocartas .carta .back p{font-size: .7em;}
+     #grupocartas .carta .data li{display:none;}/*by default hide all card data,show them with media queries*/
+     
+/*POPUP*/
+.popup{margin-top: 50%;}
+
+
+
+/* ------ RESPONSIVE ---- */
+@media only screen and (max-width: 768px){
+    body {
+        font-size: 1em;
+        margin: 0px;
+    }
+
+}
