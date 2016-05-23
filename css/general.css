@@ -83,8 +83,8 @@ input{
         border: solid 5px red;
         border-radius: 5px;
         display: block;
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
         float: left;
     }
     .page .board span{font-size: .8em;}
