@@ -8,10 +8,10 @@ It is an hybrid app ready to play in any kind of devices,builded with angular.js
 *Try it at* http://atreliz.github.io/Jungle-Cards
 
 ## Quizzer Screenshots
-![Welcome Page](img1.png "Welcome")
+![Level Ready](screenshots/img3.png "Level Ready")
 
-![Question Page](img2.png "Question Example")
+![Playing](screenshots/img1.png "Playing")
 
-![Result Page](img3.png "Result Fail")
+![Level Done](screenshots/img2.png "Level Done")
 
 
